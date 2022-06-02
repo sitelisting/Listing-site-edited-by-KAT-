@@ -1,0 +1,360 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.main{
+    background-color:#999;
+    background-position: center;
+    background-size: cover;
+    height:auto;
+    background:linear-gradient(rgba(21, 17, 3, 0.776), rgba(5, 2, 23, 0.565)),url("Background2.jpg");
+    height: 150vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* opacity: 0.8; */
+}
+.navbar{
+    width:1200px;
+    height:170px;
+    z-index: 100000;
+}
+.icon{
+    width:250px;
+    float:left;
+    height:90 ;
+}
+.logo{
+color: rgb(82, 20, 164);
+text-shadow: 1px 1px rgb(150, 90, 229);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 50px;
+float:left;
+padding-left: 50px;
+padding-top: 30px;
+}
+.menu{
+width:400px;
+float:left;
+height: 70px;
+}
+.menu-icon{
+    display:none;
+}
+.menu ul{
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}
+.menu ul li{
+    list-style-type: none;
+    font-weight: bold;
+    margin-top: 200px;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+.menu ul li a{
+    
+    text-decoration-line: none;
+    color: rgb(236, 230, 230);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    transition: 0.4s ease-in-out;
+    outline-color: rgb(46, 3, 102);
+}
+ul li a:hover{
+    color: rgb(46, 3, 102);
+}
+li> button{
+    background-color: rgb(46, 3, 102);
+    color:#fff;
+    height:30px;
+    width: 80px;
+    border-radius: 10px;
+    float: right;
+    
+     /* font-size: 16px; */
+    font-weight: bold;
+}
+li> button:hover{
+background-color:rgb(98, 45, 167);
+}
+
+/*Form edits */
+.container 		{ 
+    font-family:'Roboto';
+    width:350px;      
+    margin: auto;
+    margin:20px;
+    
+    
+}
+    .group { 
+        position:relative; 
+        margin-bottom:45px;
+        margin: auto; 
+        margin-left: 10px;
+}
+input {
+    font-size:18px;
+    padding-top:10px;
+    padding-bottom:1px;
+    padding-left:10px;
+    padding-right:10px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; }
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+    top:-20px;
+    font-size:14px;
+    color:#5264AE;
+}
+label 				 {
+    color:#999; 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+
+/* BOTTOM BARS */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+
+
+
+
+/*Headings*/
+
+h1#headingOne{
+    color:rgb(221, 191, 191); 
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+h2{
+    color:rgb(255, 255, 255);
+    font-size: 35px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#middleHeading> h3{
+    margin-left: 30px;
+    color:white;
+}
+#lastHeading{
+    margin-bottom:50%;
+    margin-top: -100px;
+    color:grey;
+    font-size: medium;    
+}
+h3{
+    padding-top:10px;
+    color:rgb(98, 98, 98);
+}
+
+.paragraphs{
+    color: white;
+    background: rgb(98, 45, 167);
+    margin: 1em;
+    background: rgb(98, 45, 167);
+    opacity: 0.8;
+    font-size: 25px;
+    margin-top:50px;
+    font-size: 20px;
+    padding:10px;
+}
+
+#footer{
+    color:rgb(98, 98, 98);
+    font-size: 20px;
+    background-color:rgb(244, 241, 247); 
+    font-weight: bold;
+    padding-top: 10px;;
+}
+
+#footer a{
+    color: black;
+    text-decoration: none;
+    margin:0 10px;
+    font-weight: bold;
+}
+#footer a:hover{
+    color: rgb(46, 3, 102);
+}
+#footer a social-icon{
+    color:#999;
+    transition: 0.2s;
+    text-decoration: none;    
+    margin: 10px;
+}
+/*button*/
+button#bnt-submit{
+    
+    -webkit-appearance: none;
+    width: auto;
+    min-width: 100px;
+    border-radius: 24px;
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(46, 3, 102);
+    color: white;
+    font-size: 14px;
+    margin-left:auto;
+    font-weight: 500;
+    box-shadow: 0px 2px 6px -1px black;
+    border: none;
+    transition: all 0.3s ease;
+    outline: 0;
+    margin-top:15px;
+}
+button#bnt-submit{
+    margin-left: 10px;
+    transform: translateY(-3px);
+    box-shadow: 0 2px 6px -1px rgba(182, 157, 230, .65);
+  }
+  button#bnt-submit:hover:active {
+    transform: scale(0.99);
+  }
+  #follow{
+      text-align: center;
+  }
+  .Sicon{
+    padding-left: 594px;
+}
+@media only screen and (max-width:700px){
+    
+    .logo{
+        font-size: 35px;
+        padding-left: 0;
+    }
+    .menu ul {
+        width: 250px;
+        background-color: #999;
+        position: absolute;
+        top: 80px;
+        left:0;
+        z-index: 2;
+        display:block;
+        margin-top: 25px;
+        margin-left: 80px;
+      }
+      .menu ul li{
+          margin-top: 20px;
+      }
+    .menu-icon{
+        display: block;
+        float:left;
+        margin-top: 50px;
+        margin-left: 130px;
+        height: 50px;
+        width:50px;
+    }
+    #menuList{
+
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    h1#headingOne{
+       
+        font-size: 10px;
+    }
+    
+    h2{
+       
+        font-size: 25px;
+        margin-top: 80px;
+    }
+    #lastHeading{
+        margin-bottom:50%;
+        margin-top: -100px;
+        color:grey;
+        font-size: medium;    
+    }
+    h3{
+        padding-top:10px;
+        color:rgb(98, 98, 98);
+    }
+    
+    .paragraphs{
+       
+        font-size: 18px;
+    }
+    
+    #footer{
+       height:200px;
+        font-size: 18px;
+    }
+    .Sicon{
+        position:unset;
+        display: flex;
+        width:auto;
+        float:left;
+        padding-left: 165px;
+     }
+   
+}

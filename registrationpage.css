@@ -1,0 +1,181 @@
+*{
+  margin:0;
+  padding:0;
+}
+body{
+    background-color: rgb(185, 185, 185);
+    background:linear-gradient(rgba(8, 3, 21, 0.527), rgba(5, 2, 23, 0.5)),url('B&W\ coffee.JPG');
+	 background-size: cover;
+    background-repeat: no-repeat;
+}
+.div1{
+    width:350px;
+    margin:auto;
+    margin:10 0 0 450px;
+    margin-top: 80px;
+    overflow: hidden;
+    padding: 75px;
+    border-radius: 10px;
+    background: rgb(98, 45, 167);
+    opacity: 0.8;
+}
+h2{
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-size: 50px;
+
+}
+/*inputform*/
+.container 		{ 
+    font-family:'Roboto';
+    width:500px; 
+    margin:30px auto 0; 
+    display:block; 
+    background:#FFF;
+    padding:60px 0px 100px 60px;
+
+}
+    .group { 
+        position:relative; 
+        margin-bottom:45px; 
+}
+input 				{
+    font-size:18px;
+    padding-top:10px;
+    padding-bottom:1px;
+    padding-left:10px;
+    padding-right:10px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; }
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+    top:-20px;
+    font-size:14px;
+    color:black;
+}
+label 				 {
+    color:black; 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+
+input#registor {
+    -webkit-appearance: none;
+    width: auto;
+    min-width: 100px;
+    border-radius: 24px;
+    text-align: center;
+    padding: 15px 40px;
+    background-color: rgb(46, 3, 102);
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+    /* margin-left:auto; */
+    font-weight: 500;
+    box-shadow: 0px 2px 6px -1px black;
+    border: none;
+    transition: all 0.3s ease;
+    outline: 0;
+}
+input#registor:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 6px -1px rgba(182, 157, 230, .65);
+}
+input#registor:hover:active {
+    transform: scale(0.99);
+}
+
+.pReg a{
+  color: white;
+}
+.pReg:hover a{
+color: blue;
+}
+.pReg:hover:active a{
+transform: scale(0.99);
+}
+@media only screen and (max-width:700px){
+  body{
+    height: auto;
+  }
+  form{
+    width:300px;
+    margin:auto;
+    margin-top: 30px;
+    padding: 5px;
+    height: auto;
+}
+  h2{
+    font-size: 35px;
+  }
+}
